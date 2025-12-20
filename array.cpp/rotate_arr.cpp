@@ -3,8 +3,9 @@ using namespace std;
 
 class Solution {
 public:
+    //(i+k)%numssize = index where last ele will be placed after rotation
     void rotate(vector<int>& nums, int k) {
-        k%=nums.size();
+        k%=nums.size();//k = one index less where last ele will be placed
    reverse(nums.begin(),nums.end());
    reverse(nums.begin(),nums.begin()+k);
    reverse(nums.begin()+k,nums.end());
