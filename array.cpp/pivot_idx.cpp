@@ -12,6 +12,7 @@ public:
       int pivot=-1,currsum=0;
       for(int i=0;i<n;i++){
         currsum+=nums[i];
+        //if rightsum == leftsum of pivot, rightsum=totsum-currsum
         if(totsum-currsum==currsum-nums[i]){
             pivot=i;
             break;
