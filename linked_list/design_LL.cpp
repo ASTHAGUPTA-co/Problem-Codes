@@ -8,7 +8,7 @@ struct Node{
     Node(int x,int val): val(x),next(next){}
 };
 
-class MyLinkedList {
+class Solution {
 public:
     Node* head;
     int size;
@@ -87,7 +87,7 @@ public:
 };
 
 int main(){
-    MyLinkedList list;
+    Solution list;
     int n;
     cout<<"enter no of elements";
     cin>>n;
